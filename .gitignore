@@ -3,8 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# Include all dependencies
+# Include all custom files
 !Dependencies
+!Objects
+!Textures
+!Source
+!Shaders
 
 # User-specific files
 *.rsuser
