@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Objects">
+      <UniqueIdentifier>{5a0e6064-b10f-4626-a4ea-a5fe1ee87da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{d055fe6d-05d2-444a-abed-d0ce675a0dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{845313fa-709e-4b3c-914e-5e4af31b20c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\GraphicsGame_OpenGL\controls.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GraphicsGame_OpenGL\objloader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GraphicsGame_OpenGL\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GraphicsGame_OpenGL\controls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GraphicsGame_OpenGL\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\GraphicsGame_OpenGL\TextureFragmentShader.fragmentshader">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="..\GraphicsGame_OpenGL\TransformVertexShader.vertexshader">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\GraphicsGame_OpenGL\mars.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\mercury.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\meteor.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\neptune.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\saturn.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\sun.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\uranus.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\venus.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\GraphicsGame_OpenGL\jupiter.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
