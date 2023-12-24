@@ -19,28 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\GraphicsGame_OpenGL\controls.hpp" />
-    <ClInclude Include="..\GraphicsGame_OpenGL\objloader.hpp" />
-    <ClInclude Include="..\GraphicsGame_OpenGL\stb_image.h" />
+    <ClCompile Include="Source\controls.cpp" />
+    <ClCompile Include="Source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\GraphicsGame_OpenGL\controls.cpp" />
-    <ClCompile Include="..\GraphicsGame_OpenGL\main.cpp" />
+    <ClInclude Include="Source\controls.hpp" />
+    <ClInclude Include="Source\objloader.hpp" />
+    <ClInclude Include="Source\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\GraphicsGame_OpenGL\TextureFragmentShader.fragmentshader" />
-    <None Include="..\GraphicsGame_OpenGL\TransformVertexShader.vertexshader" />
+    <Image Include="Textures\jupiter.jpg" />
+    <Image Include="Textures\mars.jpg" />
+    <Image Include="Textures\mercury.jpg" />
+    <Image Include="Textures\meteor.jpg" />
+    <Image Include="Textures\neptune.jpg" />
+    <Image Include="Textures\saturn.jpg" />
+    <Image Include="Textures\sun.jpg" />
+    <Image Include="Textures\uranus.jpg" />
+    <Image Include="Textures\venus.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\GraphicsGame_OpenGL\jupiter.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\mars.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\mercury.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\meteor.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\neptune.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\saturn.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\sun.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\uranus.jpg" />
-    <Image Include="..\GraphicsGame_OpenGL\venus.jpg" />
+    <None Include="Shaders\TextureFragmentShader.fragmentshader" />
+    <None Include="Shaders\TransformVertexShader.vertexshader" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

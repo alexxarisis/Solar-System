@@ -573,31 +573,43 @@ int main(void)
 	glBindVertexArray(VertexArrayID);
 
 	// Create and compile our GLSL program from the shaders
-	GLuint programID = LoadShaders("TransformVertexShader.vertexshader", "TextureFragmentShader.fragmentshader");
-	//GLuint programID = LoadShaders("./TransformVertexShader.vertexshader", "./TextureFragmentShader.fragmentshader");
-	//GLuint programID = LoadShaders((path + "TransformVertexShader.vertexshader").c_str(), (path + "TextureFragmentShader.fragmentshader").c_str());
+	GLuint programID = LoadShaders(
+		"Shaders\\TransformVertexShader.vertexshader", 
+		"Shaders\\TextureFragmentShader.fragmentshader"
+	);
 
 	// Get a handle for our "MVP" uniform
 	GLuint MatrixID = glGetUniformLocation(programID, "MVP");
 	
 	// Load textures, in order of the solar system (except meteor at [1])
-	std::vector<const char*> textureFilenames = { "sun.jpg", "meteor.jpg", "mercury.jpg", "venus.jpg",
-		"mars.jpg", "jupiter.jpg", "saturn.jpg", "uranus.jpg", "neptune.jpg" };
+	std::vector<const char*> textureFilenames = { 
+		"Textures\\sun.jpg", 
+		"Textures\\meteor.jpg", 
+		"Textures\\mercury.jpg", 
+		"Textures\\venus.jpg",
+		"Textures\\mars.jpg", 
+		"Textures\\jupiter.jpg", 
+		"Textures\\saturn.jpg", 
+		"Textures\\uranus.jpg", 
+		"Textures\\neptune.jpg" 
+	};
 	std::vector<Texture> textures;
 
 	for (int i = 0; i < textureFilenames.size(); i++) {
 		Texture texture = loadTexture(textureFilenames[i], programID);
-		//Texture texture = loadTexture((path + textureFilenames[i]).c_str(), programID);
 		textures.push_back(texture);
 	}
 	
 	// Load Objects
-	std::vector<const char*> objectsFilenames = { "sun.obj", "meteor.obj", "planet.obj" };
+	std::vector<const char*> objectsFilenames = { 
+		"Objects\\sun.obj", 
+		"Objects\\meteor.obj", 
+		"Objects\\planet.obj" 
+	};
 	std::vector<ObjectData> objectTypes;
 
 	for (int i = 0; i < objectsFilenames.size(); i++) {
 		ObjectData object = initializeObject(objectsFilenames[i]);
-		//ObjectData object = initializeObject((path + objectsFilenames[i]).c_str());
 		objectTypes.push_back(object);
 	}
 
